@@ -27,7 +27,7 @@ export default function Home() {
       <main className={styles.main}>
         <img className={styles.img} src="/bluesinvienna.jpeg" />
         <h1 className={styles.title}>BLUES IN VIENNA</h1>
-        <h2 className={styles.title}>We're working om it ;) </h2>
+        <h2 className={styles.title}>We are working om it ;) </h2>
       </main>
     </div>
   );
