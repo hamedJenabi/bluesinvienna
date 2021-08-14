@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Home.module.scss";
 
 export default function Home() {
   return (
@@ -27,7 +27,8 @@ export default function Home() {
       <main className={styles.main}>
         <img className={styles.img} src="/bluesinvienna.jpeg" />
         <h1 className={styles.title}>BLUES IN VIENNA</h1>
-        <h2 className={styles.title}>We are working om it ;) </h2>
+        <h1 className={styles.title}>All about blues dance in Vienna</h1>
+        <h2 className={styles.description}>We are working on it ;) </h2>
       </main>
     </div>
   );

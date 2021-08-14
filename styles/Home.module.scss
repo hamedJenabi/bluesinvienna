@@ -1,0 +1,37 @@
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title,
+.description {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 2rem;
+  color: #fafafa;
+  transform: translateY(-1100px);
+  @media (min-width: 800px) {
+    font-size: 4rem;
+    transform: translateY(-1200px);
+  }
+}
+
+.description {
+  margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
