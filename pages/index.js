@@ -30,7 +30,9 @@ export default function Home() {
         <h1 className={styles.title}>All about blues dance in Vienna</h1>
         <h2 className={styles.description}>We are working on it :D </h2>
         <h2 className={styles.description}>
-          meanwhile, you can contact us per{" "}
+          meanwhile, you can contact us per
+        </h2>
+        <h2 className={styles.description}>
           <a href="mailto:hamed.jenabi@gmail.com">email</a>
         </h2>
       </main>
