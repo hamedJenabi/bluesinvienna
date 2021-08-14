@@ -28,7 +28,7 @@ export default function Home() {
         <img className={styles.img} src="/bluesinvienna.jpeg" />
         <h1 className={styles.title}>BLUES IN VIENNA</h1>
         <h1 className={styles.title}>All about blues dance in Vienna</h1>
-        <h2 className={styles.description}>We are working on it ;) </h2>
+        <h2 className={styles.description}>We are working on it :D </h2>
       </main>
     </div>
   );
