@@ -28,6 +28,10 @@
 .description {
   margin-top: 40px;
 }
+.description a {
+  color: rgb(86, 111, 161);
+  text-decoration: underline;
+}
 
 @media (max-width: 600px) {
   .grid {

@@ -9,7 +9,7 @@ export default function Home() {
         <title>Blues in Vinnea</title>
         <meta
           name="description"
-          content="All you need about blues dance in vienna"
+          content="All you need to knowabout blues dance in Vienna"
         />
         <link rel="icon" href="/favicon.ico" />
         <link
@@ -29,6 +29,10 @@ export default function Home() {
         <h1 className={styles.title}>BLUES IN VIENNA</h1>
         <h1 className={styles.title}>All about blues dance in Vienna</h1>
         <h2 className={styles.description}>We are working on it :D </h2>
+        <h2 className={styles.description}>
+          meanwhile, you can contact us per{" "}
+          <a href="mailto:hamed.jenabi@gmail.com">email</a>
+        </h2>
       </main>
     </div>
   );
