@@ -13,6 +13,7 @@ const events = [
     title: "Vienna Sugar Blues",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    link: "https://viennasugarblues.com",
   },
   {
     image:
@@ -20,6 +21,7 @@ const events = [
     title: "Blues Fever Festival",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    link: "https://bluesfever.eu",
   },
 ];
 export default function Home() {

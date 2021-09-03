@@ -49,9 +49,10 @@
     justify-content: space-evenly;
     padding: 0 $lg;
   }
-  p {
+  a {
     text-align: center;
-    width: 100%;
+    padding: 0 16px;
+    line-height: 40px;
     font-size: $smallFont;
   }
 }

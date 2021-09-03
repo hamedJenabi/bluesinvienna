@@ -154,9 +154,11 @@ $headerFont: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu
   animation-timing-function: linear;
 }
 @mixin textLink {
+  font-family: Poiret One, Roboto, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
   cursor: pointer;
   width: auto;
-  color: $light;
   position: relative;
   &::before {
     content: "";
