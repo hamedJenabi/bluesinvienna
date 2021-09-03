@@ -124,6 +124,10 @@
   justify-content: center;
   margin: 32px 0;
   padding: 0 0 32px 0;
+  flex-direction: column;
+  @media (min-width: 800px) {
+    flex-direction: row;
+  }
 }
 .about {
   border-top: 1px solid #02101f;
