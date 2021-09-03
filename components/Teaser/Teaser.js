@@ -22,10 +22,11 @@ const Teaser = ({
   button,
   link,
   image,
+  anchor = title,
 }) => {
   return (
     <Container isZebra={isZebra} isReversed={isRevered}>
-      <div className={styles.title}>
+      <div id={anchor} className={styles.title}>
         {title && <h1>{title}</h1>}
         {content && <p className={styles.content}> {content}</p>}
         <Link href={link || "/"}>

@@ -36,6 +36,7 @@ export default function Home() {
         </h1>
 
         <Teaser
+          isZebra
           image="/bluesinvienna.jpeg"
           title="BLUES IN VIENNA"
           content="All you want to know about blues dancing in Vienna"
@@ -43,6 +44,7 @@ export default function Home() {
           link="https://docs.google.com/forms/d/e/1FAIpQLScFtadEB9BUq3GnwHlymZSIQxCZjZvTglKDETaHHqdM-y5DlA/viewform"
         />
         <Teaser
+          isZebra
           isRevered
           title="Classes"
           image="/bluesinvienna.jpeg"
@@ -50,7 +52,9 @@ export default function Home() {
           link="https://docs.google.com/forms/d/e/1FAIpQLScFtadEB9BUq3GnwHlymZSIQxCZjZvTglKDETaHHqdM-y5DlA/viewform"
           button="register here"
         />
-        <h1>Festivals in Vienna</h1>
+        <h1 id="Festivals" style={{ paddingTop: "26px" }}>
+          Festivals in Vienna
+        </h1>
         <div className={styles.eventWrapper}>
           {events &&
             events.map((event) => (

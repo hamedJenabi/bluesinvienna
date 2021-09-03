@@ -12,5 +12,8 @@
     &.isReversed {
       flex-direction: row-reverse;
     }
+    &.isZebra {
+      border-bottom: 1px solid $navy;
+    }
   }
 }

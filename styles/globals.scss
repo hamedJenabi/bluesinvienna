@@ -5,6 +5,8 @@ body {
   margin: auto;
   padding: 0 10px;
   background-color: rgb(245, 249, 245);
+  scroll-behavior: smooth !important;
+
   @media (min-width: 650px) {
     padding: 0 20px;
   }
