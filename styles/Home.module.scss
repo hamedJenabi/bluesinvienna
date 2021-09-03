@@ -1,3 +1,5 @@
+@import "./variables";
+
 .container {
   display: flex;
   flex-direction: column;
@@ -145,4 +147,11 @@
   @media (min-width: 600px) {
     width: 45%;
   }
+}
+.alarm {
+  text-align: center;
+  border: 1px solid $navy;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgb(236, 241, 242);
 }

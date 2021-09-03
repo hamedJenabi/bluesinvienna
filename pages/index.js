@@ -33,7 +33,7 @@ export default function Home() {
     <div className={styles.container}>
       <Header title="BLUES IN VIENNA" />
       <main className={styles.main}>
-        <h1 style={{ textAlign: "center" }}>
+        <h1 className={styles.alarm}>
           WEBSITE IS UNDER CONSTRUCTION... MORE INFO COMING SOOOOOON
         </h1>
 
