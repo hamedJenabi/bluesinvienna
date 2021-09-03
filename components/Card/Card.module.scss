@@ -1,0 +1,9 @@
+@import "../../styles/variables";
+
+.card {
+  box-shadow: 0 22px 45px 0 rgba(0, 0, 0, 0.11);
+  padding: $md;
+  border-radius: 4px;
+  @media (min-width: $breakpointMd) {
+  }
+}
