@@ -13,7 +13,10 @@ import { useEffect, useState } from "react";
 import { CollectionsOutlined } from "@material-ui/icons";
 import Link from "next/link";
 
-export default function Classes({ title = "hello", description = "hello" }) {
+export default function Classes({
+  title = "We start in September",
+  description = "tba",
+}) {
   return (
     <div>
       <Header
@@ -32,7 +35,7 @@ export default function Classes({ title = "hello", description = "hello" }) {
             <p dangerouslySetInnerHTML={{ __html: description }}></p>
           )}
 
-          <Link href="/">
+          <Link href="https://docs.google.com/forms/d/e/1FAIpQLScFtadEB9BUq3GnwHlymZSIQxCZjZvTglKDETaHHqdM-y5DlA/viewform">
             <button id="register" className={styles.button}>
               Reigter here
             </button>
