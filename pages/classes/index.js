@@ -14,8 +14,15 @@ import { CollectionsOutlined } from "@material-ui/icons";
 import Link from "next/link";
 
 export default function Classes({
-  title = "We start in September",
-  description = "tba",
+  title = "Blues Classes in Vienna (vaccinated only) ",
+  description = `Please bring your <strong>vaccination pass</strong> at the first class. <br>
+  4 weeks of blues dance classes <br>
+  price: €60 <br>
+  Beginner Blues Class: <br>
+  18:30 - 19: 30 <br>
+  Blues refreshment: <br>
+  19:45 - 20:56 <br>
+  Where? TBA`,
 }) {
   return (
     <div>
@@ -30,7 +37,10 @@ export default function Classes({
         <div className={styles.contentWrapper}>
           {title && <h2 dangerouslySetInnerHTML={{ __html: title }}></h2>}
 
-          <p style={{ margin: "20px 0 0 0" }}>"date"</p>
+          <p style={{ margin: "5px 0 0 0" }}>21.09.521</p>
+          <p style={{ margin: "5px 0 0 0" }}>29.09.521</p>
+          <p style={{ margin: "5px 0 0 0" }}>05.10.521</p>
+          <p style={{ margin: "5px 0 0 0" }}>12.10.2021</p>
           {description && (
             <p dangerouslySetInnerHTML={{ __html: description }}></p>
           )}
