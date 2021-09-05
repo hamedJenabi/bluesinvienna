@@ -29,9 +29,9 @@ export default function Classes({
         <div className={styles.contentWrapper}>
           {title && <h2 dangerouslySetInnerHTML={{ __html: title }}></h2>}
 
-          <p style={{ margin: "5px 0 0 0" }}>21.09.521</p>
-          <p style={{ margin: "5px 0 0 0" }}>29.09.521</p>
-          <p style={{ margin: "5px 0 0 0" }}>05.10.521</p>
+          <p style={{ margin: "5px 0 0 0" }}>21.09.2021</p>
+          <p style={{ margin: "5px 0 0 0" }}>29.09.2021</p>
+          <p style={{ margin: "5px 0 0 0" }}>05.10.2021</p>
           <p style={{ margin: "5px 0 0 0" }}>12.10.2021</p>
           {description && (
             <p dangerouslySetInnerHTML={{ __html: description }}></p>
