@@ -159,6 +159,7 @@ $headerFont: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu
     sans-serif;
   cursor: pointer;
   width: auto;
+  color: initial;
   position: relative;
   &::before {
     content: "";

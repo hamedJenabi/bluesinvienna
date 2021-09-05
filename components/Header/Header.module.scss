@@ -3,12 +3,10 @@
   height: 70px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   z-index: 1000;
-  // width: calc(100% + 10px + 10px);
-  padding: 30px 35px;
+  width: 100%;
+  padding: 30px 12px;
   background-color: rgb(245, 249, 245);
-
   position: sticky;
   transition: transform 500ms;
   top: 0;
@@ -25,6 +23,7 @@
     transform: translateY(35px);
   }
   @media (min-width: $breakpointLg) {
+    justify-content: space-between;
     height: 80px;
     &.unfix {
       box-shadow: $boxShadow;
@@ -41,11 +40,12 @@
 }
 .linkWrapper {
   display: flex;
-  width: 100%;
   align-items: center;
   justify-content: flex-end;
-  padding-right: sm;
+  width: 45%;
   @media (min-width: $breakpointLg) {
+    width: 100%;
+    padding-right: sm;
     justify-content: space-evenly;
     padding: 0 $lg;
   }
@@ -67,10 +67,10 @@
   font-family: Poiret One, Roboto, -apple-system, BlinkMacSystemFont, Segoe UI,
     Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
     sans-serif;
-  font-size: 25px !important;
+  font-size: 22px !important;
   color: $navy;
   opacity: 0;
-  width: 320px;
+  width: 350px;
   @media (min-width: $breakpointLg) {
     width: 400px;
     font-size: 35px !important;

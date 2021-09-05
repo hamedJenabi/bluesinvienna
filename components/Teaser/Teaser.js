@@ -27,8 +27,13 @@ const Teaser = ({
   return (
     <Container isZebra={isZebra} isReversed={isRevered}>
       <div id={anchor} className={styles.title}>
-        {title && <h1>{title}</h1>}
-        {content && <p className={styles.content}> {content}</p>}
+        {title && <h1 dangerouslySetInnerHTML={{ __html: title }} />}
+        {content && (
+          <p
+            className={styles.content}
+            dangerouslySetInnerHTML={{ __html: content }}
+          />
+        )}
         <Link href={link || "/"}>
           <button className={styles.button}>{button}</button>
         </Link>

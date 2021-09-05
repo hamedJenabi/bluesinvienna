@@ -6,7 +6,7 @@ import Drawer from "./Drawer/Drawer";
 import useMedia from "use-media";
 import Link from "next/link";
 
-export default function Header({ title }) {
+export default function Header({ title, menuItems }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [titleShown, setTitleShown] = useState(false);
@@ -15,11 +15,6 @@ export default function Header({ title }) {
   const router = useRouter();
   const isMobile = useMedia({ maxWidth: "768px" });
 
-  const menuItems = [
-    { title: "Home", link: "#" },
-    { title: "Classes", link: "#Classes" },
-    { title: "Festivals", link: "#Festivals" },
-  ];
   useEffect(() => {
     if ("scrollRestoration" in window.history) {
       window.history.scrollRestoration = "manual";
@@ -71,7 +66,7 @@ export default function Header({ title }) {
                 {title}
               </Link>
             ))}
-          {isMobile && <Drawer />}
+          {isMobile && <Drawer menuItems={menuItems} />}
         </div>
       </div>
     </div>

@@ -31,19 +31,29 @@ export default function Home() {
   };
   return (
     <div className={styles.container}>
-      <Header title="BLUES IN VIENNA" />
+      <Header
+        title="BLUES IN VIENNA"
+        menuItems={[
+          { title: "Home", link: "/" },
+          { title: "Classes", link: "#Classes" },
+          { title: "Festivals", link: "#Festivals" },
+        ]}
+      />
       <main className={styles.main}>
         <h1 className={styles.alarm}>
-          WEBSITE IS UNDER CONSTRUCTION... MORE INFO COMING SOOOOOON
+          WEBSITE IS UNDER CONSTRUCTION... Meanwhile checkout our<br></br>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScFtadEB9BUq3GnwHlymZSIQxCZjZvTglKDETaHHqdM-y5DlA/viewform">
+            classes
+          </a>
         </h1>
 
         <Teaser
           isZebra
           image="/bluesinvienna.jpeg"
           title="BLUES IN VIENNA"
-          content="All you want to know about blues dancing in Vienna"
-          button="Take the first class"
-          link="https://docs.google.com/forms/d/e/1FAIpQLScFtadEB9BUq3GnwHlymZSIQxCZjZvTglKDETaHHqdM-y5DlA/viewform"
+          content="All you want to know about blues dancing in Vienna </br> Our very first blues class after all this in online. "
+          button="Check it out here"
+          link="/classes"
         />
         <Teaser
           isZebra
@@ -51,8 +61,9 @@ export default function Home() {
           title="Classes"
           image="/bluesinvienna.jpeg"
           content="Next Blues classes starts on September 21st. With 2 levels"
-          link="https://docs.google.com/forms/d/e/1FAIpQLScFtadEB9BUq3GnwHlymZSIQxCZjZvTglKDETaHHqdM-y5DlA/viewform"
-          button="register here"
+          // link="https://docs.google.com/forms/d/e/1FAIpQLScFtadEB9BUq3GnwHlymZSIQxCZjZvTglKDETaHHqdM-y5DlA/viewform"
+          link="/classes"
+          button="More info"
         />
         <h1 id="Festivals" style={{ paddingTop: "26px" }}>
           Festivals in Vienna
@@ -63,6 +74,18 @@ export default function Home() {
               <EventCard key={event.title} event={event} />
             ))}
         </div>
+        {/* <h1 id="About us" style={{ paddingTop: "26px" }}>
+          About Blues in Vienna
+        </h1>
+        <Teaser
+          isZebra
+          isRevered
+          title="Classes"
+          image="/bluesinvienna.jpeg"
+          content="Next Blues classes starts on September 21st. With 2 levels"
+          link="https://docs.google.com/forms/d/e/1FAIpQLScFtadEB9BUq3GnwHlymZSIQxCZjZvTglKDETaHHqdM-y5DlA/viewform"
+          button="register here"
+        /> */}
       </main>
 
       <footer className={styles.footer}>
