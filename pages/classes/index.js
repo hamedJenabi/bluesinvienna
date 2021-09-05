@@ -1,16 +1,8 @@
 /* eslint-disable @next/next/no-page-custom-font */
-import Head from "next/head";
-import Image from "next/image";
+
 import styles from "./classes.module.scss";
 import Header from "../../components/Header/Header";
-import Container from "../../components/Container/Container";
-import Teaser from "../../components/Teaser/Teaser";
-import EventCard from "../../components/EventCard/EventCard";
-import GoogleMapReact from "google-map-react";
 
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
-import { CollectionsOutlined } from "@material-ui/icons";
 import Link from "next/link";
 
 export default function Classes({
