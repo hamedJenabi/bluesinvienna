@@ -39,7 +39,7 @@ export default function Classes({
 
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLScFtadEB9BUq3GnwHlymZSIQxCZjZvTglKDETaHHqdM-y5DlA/viewform">
             <button id="register" className={styles.button}>
-              Reigter here
+              Regiter here
             </button>
           </Link>
         </div>
