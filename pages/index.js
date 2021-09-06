@@ -6,6 +6,7 @@ import Header from "../components/Header/Header";
 import Container from "../components/Container/Container";
 import Teaser from "../components/Teaser/Teaser";
 import EventCard from "../components/EventCard/EventCard";
+import useMedia from "use-media";
 
 const events = [
   {
@@ -25,6 +26,8 @@ const events = [
   },
 ];
 export default function Home() {
+  const isMobile = useMedia({ maxWidth: "768px" });
+
   const center = {
     lat: 48.214804075824105,
     lng: 16.36558591961406,
@@ -100,6 +103,25 @@ export default function Home() {
           link="/classes"
           button="More info"
         />
+        <h1
+          id="blues"
+          style={{
+            padding: "26px 0",
+            width: "100%",
+            textAlign: "center",
+          }}
+        >
+          What is Blues?
+        </h1>
+        <iframe
+          width={isMobile ? "100%" : "760"}
+          height={isMobile ? "300" : "400"}
+          src="https://www.youtube.com/embed/W4GtVlnHZeE"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
         <h1 id="Festivals" style={{ paddingTop: "26px" }}>
           Festivals in Vienna
         </h1>
