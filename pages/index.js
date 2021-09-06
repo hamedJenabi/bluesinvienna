@@ -80,9 +80,7 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.alarm}>
           WEBSITE IS UNDER CONSTRUCTION... Meanwhile checkout our<br></br>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScFtadEB9BUq3GnwHlymZSIQxCZjZvTglKDETaHHqdM-y5DlA/viewform">
-            classes
-          </a>
+          <a href="/classes">classes</a>
         </h1>
 
         <Teaser
