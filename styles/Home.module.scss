@@ -160,14 +160,14 @@
     -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   border: 1px solid $navy;
-  font-size: 26px;
+  font-size: 20px !important;
   padding: 20px;
   border-radius: 8px;
   background-color: rgb(236, 241, 242);
   margin-bottom: $md;
   box-shadow: $boxShadow;
   @media (min-width: 800px) {
-    font-size: 46px;
+    font-size: 26px !important;
   }
   a {
     color: rgb(80, 80, 136);

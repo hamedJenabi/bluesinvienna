@@ -78,10 +78,10 @@ export default function Home() {
         ]}
       />
       <main className={styles.main}>
-        <h1 className={styles.alarm}>
+        <h2 className={styles.alarm}>
           WEBSITE IS UNDER CONSTRUCTION... Meanwhile checkout our<br></br>
           <a href="/classes">classes</a>
-        </h1>
+        </h2>
 
         <Teaser
           isZebra
