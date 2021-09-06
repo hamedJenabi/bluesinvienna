@@ -9,7 +9,7 @@ export default function Classes({
   title = "Blues Classes in Vienna (vaccinated only) ",
   description = `Please bring your <strong>vaccination pass</strong> at the first class. <br>
   4 weeks of blues dance classes <br>
-  price: €60 <br>
+  Price: €60 (Both classes €100)<br>
   Blues refreshment: <br>
   18:15 - 19:25 <br>
   Beginner Blues Class: <br>
