@@ -6,6 +6,7 @@ import Header from "../components/Header/Header";
 import Container from "../components/Container/Container";
 import Teaser from "../components/Teaser/Teaser";
 import EventCard from "../components/EventCard/EventCard";
+import Heading from "../components/Heading/Heading";
 
 const events = [
   {
@@ -65,9 +66,9 @@ export default function Home() {
           link="/classes"
           button="More info"
         />
-        <h1 id="Festivals" style={{ paddingTop: "26px" }}>
+        <Heading as="h1" id="Festivals" style={{ paddingTop: "26px" }}>
           Festivals in Vienna
-        </h1>
+        </Heading>
         <div className={styles.eventWrapper}>
           {events &&
             events.map((event) => (

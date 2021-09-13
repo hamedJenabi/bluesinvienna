@@ -64,6 +64,7 @@ $headerFont: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu
   text-transform: uppercase;
   font-weight: 600;
   text-decoration: none;
+  letter-spacing: 1px;
   width: 170px;
   height: 50px;
   margin: $sm 0;
@@ -71,7 +72,7 @@ $headerFont: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu
   &:hover {
     background-color: #198075;
     cursor: pointer;
-    color: #8fb6b3;
+    color: #dbebe9;
     transition: 300ms;
     border: none;
   }
@@ -197,4 +198,79 @@ $headerFont: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu
     top: 0;
     border: 1px dashed $blue;
   }
+}
+
+@mixin limitLines($lines) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+}
+
+@mixin text-xs() {
+  font-size: $xs;
+  font-weight: 200;
+}
+
+@mixin text-sm() {
+  font-size: $sm;
+  font-weight: 200;
+}
+
+@mixin text-default() {
+  font-size: $md;
+  font-weight: 200;
+}
+
+@mixin text-md() {
+  font-size: $md;
+  font-weight: 200;
+}
+
+@mixin text-lg() {
+  font-size: $lg;
+  font-weight: 200;
+}
+
+@mixin text-h1() {
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 1.19;
+}
+
+@mixin text-h2() {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.167;
+}
+
+@mixin text-h3() {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+@mixin text-h4() {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.214;
+}
+
+@mixin text-h5() {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.333;
+}
+
+@mixin text-h6() {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+@mixin text-h7() {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.444;
 }
