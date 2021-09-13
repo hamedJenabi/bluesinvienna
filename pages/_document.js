@@ -24,7 +24,7 @@ class MyDocument extends Document {
           />
 
           <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://bluesfever.eu/" />
+          <meta property="og:url" content="https://bluesinvienna.com/" />
           <meta property="og:title" content="Blues in Vienna" />
           <meta
             property="og:description"

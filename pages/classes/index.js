@@ -9,11 +9,11 @@ export default function Classes({
   title = "Blues Classes in Vienna (vaccinated only) ",
   description = `Please bring your <strong>vaccination pass</strong> at the first class. <br>
   4 weeks of blues dance classes <br>
-  price: €60 <br>
-  Beginner Blues Class: <br>
-  18:30 - 19: 30 <br>
+  Price: €60 (Both classes €100)<br>
   Blues refreshment: <br>
-  19:45 - 20:56 <br>
+  18:15 - 19:25 <br>
+  Beginner Blues Class: <br>
+  19:35 - 20:45 <br>
   Where? TBA`,
 }) {
   return (
@@ -39,7 +39,7 @@ export default function Classes({
 
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLScFtadEB9BUq3GnwHlymZSIQxCZjZvTglKDETaHHqdM-y5DlA/viewform">
             <button id="register" className={styles.button}>
-              Reigter here
+              Regiter here
             </button>
           </Link>
         </div>
