@@ -25,5 +25,7 @@
   }
 }
 .button {
+  margin-top: $sm;
+  padding: $sm !important;
   @include button;
 }

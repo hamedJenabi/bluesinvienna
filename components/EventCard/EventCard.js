@@ -11,9 +11,11 @@ const EventCard = ({ event }) => (
     )}
     {event.title && <h2>{event.title}</h2>}
     {/* <p>01.09.2021</p> */}
-    {event.content && <p>{event.content}</p>}
+    {event.content && <p style={{ paddingBottom: "20px" }}>{event.content}</p>}
     <Link href={event.link}>
-      <button className={styles.button}>More About This</button>
+      <a target="_blank" className={styles.button}>
+        More About This
+      </a>
     </Link>
   </div>
 );
