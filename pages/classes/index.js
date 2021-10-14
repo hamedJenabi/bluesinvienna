@@ -10,9 +10,9 @@ export default function Classes({
   description = `Please bring your <strong>vaccination pass</strong> at the first class. <br>
   4 weeks of blues dance classes <br>
   Price: €60 <br>
-  Internedite Blues: <br>
+  Level 2: <br>
   18:15 - 19:25 <br>
-  Beginner Blues Class: <br>
+  Level 1: <br>
   19:35 - 20:45 <br>
   Where: Azul Bar  <br>
   <br>
