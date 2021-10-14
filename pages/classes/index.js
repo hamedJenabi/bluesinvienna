@@ -6,7 +6,7 @@ import Header from "../../components/Header/Header";
 import Link from "next/link";
 
 export default function Classes({
-  title = "Blues Classes in Vienna (vaccinated only) ",
+  title = "Blues Classes in Vienna (vaccinated/Recovered only) ",
   description = `Please bring your <strong>vaccination pass</strong> at the first class. <br>
   4 weeks of blues dance classes <br>
   Price: €60 <br>
