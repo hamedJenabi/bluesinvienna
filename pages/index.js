@@ -103,7 +103,6 @@ export default function Home() {
         />
         <Teaser
           isZebra
-          isRevered
           title="Parties"
           image="/party.jpeg"
           content="Our Blues Party is every Tuesday at Azul Bar"
