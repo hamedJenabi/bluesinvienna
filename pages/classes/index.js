@@ -6,13 +6,13 @@ import Header from "../../components/Header/Header";
 import Link from "next/link";
 
 export default function Classes({
-  title = "Blues Classes in Vienna (vaccinated only) ",
-  description = `Please bring your <strong>vaccination pass</strong> at the first class. <br>
+  title = "Blues Classes in Vienna (vaccinated/Recovered only) ",
+  description = `Please bring your <strong>vaccination/Recovered pass</strong> at the first class. <br>
   4 weeks of blues dance classes <br>
   Price: €60 <br>
-  Internedite Blues: <br>
+  Level 2: <br>
   18:15 - 19:25 <br>
-  Beginner Blues Class: <br>
+  Level 1: <br>
   19:35 - 20:45 <br>
   Where: Azul Bar  <br>
   <br>
