@@ -101,6 +101,15 @@ export default function Home() {
           link="/classes"
           button="More info"
         />
+        <Teaser
+          isZebra
+          isRevered
+          title="Parties"
+          image="/party.jpeg"
+          content="Our Blues Party is every Tuesday at Azul Bar"
+          link="https://www.facebook.com/bluesshoeson"
+          button="Our Facebook Page"
+        />
         <h1
           id="blues"
           style={{
