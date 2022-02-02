@@ -82,7 +82,7 @@ export default function Home() {
       <main className={styles.main}>
         <h2 className={styles.alarm}>
           WEBSITE IS UNDER CONSTRUCTION... Meanwhile checkout our<br></br>
-          <a href="/classes">classes</a>
+          <a href="/goodmorningblues">Workshop with Jenna & Dara</a>
         </h2>
         <Teaser
           isZebra
