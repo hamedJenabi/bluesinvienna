@@ -75,6 +75,7 @@ export default function Home() {
         menuItems={[
           { title: "Home", link: "/" },
           { title: "Classes", link: "#Classes" },
+          { title: "Good Morning Blues", link: "/goodmorningblues" },
           { title: "Festivals", link: "#Festivals" },
         ]}
       />
