@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function Workshop({
   title = "Blues Classes in Vienna (vaccinated/Recovered only) ",
   description = `
-  <strong>06.03 - 08.03.2022</strong> <br>
+  <strong>04.03 - 06.03.2022</strong> <br>
   3 hours of blues/slow swing dance classes <br>
   And 2 parties with live music <br>
    <br>
