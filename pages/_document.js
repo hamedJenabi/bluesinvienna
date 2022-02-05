@@ -12,6 +12,7 @@ class MyDocument extends Document {
             type="text/css"
             media="all"
           ></link>
+          <meta property="og:image" content="/bluesinveinna.jpeg" />
           <link
             href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
             rel="stylesheet"
