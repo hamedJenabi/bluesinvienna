@@ -12,7 +12,7 @@ class MyDocument extends Document {
             type="text/css"
             media="all"
           ></link>
-          <meta property="og:image" content="/bluesinveinna.jpeg" />
+
           <link
             href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
             rel="stylesheet"
@@ -31,7 +31,7 @@ class MyDocument extends Document {
             property="og:description"
             content="All you need to know about dancing blues in Vienna"
           />
-          <meta property="og:image" content="/logo.png" />
+          <meta property="og:image" content="/bluesinveinna.jpeg" />
           <link
             rel="stylesheet"
             id="et-builder-googlefonts-cached-css"
