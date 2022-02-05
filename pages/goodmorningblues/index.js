@@ -54,16 +54,16 @@ export default function Workshop({
       <div className={styles.container}>
         <img className={styles.image} src="/goodmorningblues.gif" />
         <div className={styles.contentWrapper}>
+          <div style={{ paddingBottom: "50px" }}>
+            <Link href="https://forms.gle/rKi1z96hDN4Cmy1eA">
+              <button id="register" className={styles.button}>
+                Register here
+              </button>
+            </Link>
+          </div>
           {description && (
             <p dangerouslySetInnerHTML={{ __html: description }}></p>
           )}
-        </div>
-        <div style={{ paddingBottom: "50px" }}>
-          <Link href="https://forms.gle/rKi1z96hDN4Cmy1eA">
-            <button id="register" className={styles.button}>
-              Register here
-            </button>
-          </Link>
         </div>
       </div>
     </div>
