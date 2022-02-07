@@ -46,7 +46,7 @@ And 2 parties with live music <br>
   return (
     <div>
       <Header
-        title="Blues in Veinna"
+        title="Blues in Vienna"
         menuItems={[{ title: "Home", link: "/" }]}
       />
       <div className={styles.container}>
