@@ -8,14 +8,6 @@ import Link from "next/link";
 export default function Workshop({
   title = "Blues Classes in Vienna (vaccinated/Recovered only) ",
   description = `
-  <strong>04.03 - 06.03.2022</strong> <br>
-  3 hours of blues/slow swing dance classes <br>
-  And 2 parties with live music <br>
-   <br>
-  <strong>With Jenna & Dara</strong>
-  <br>
-  <br>
-  Price: €70 <br>
   *** Please bring your <strong>vaccination/Recovered pass</strong>. *** <br>
   <br>
   <br>
@@ -44,7 +36,13 @@ export default function Workshop({
     <br>`,
 }) {
   const isMobile = useMedia({ maxWidth: "468px" });
-
+  const subtitle = `
+  <strong>With Jenna & Dara</strong><br>
+<strong>04.03 - 06.03.2022</strong> <br>
+3 hours of blues/slow swing dance classes <br>
+And 2 parties with live music <br>
+ <br>
+ Price: €70 <br>`;
   return (
     <div>
       <Header
@@ -54,13 +52,14 @@ export default function Workshop({
       <div className={styles.container}>
         <img className={styles.image} src="/goodmorningblues.gif" />
         <div className={styles.contentWrapper}>
-          <div style={{ paddingBottom: "50px" }}>
-            <Link href="https://forms.gle/rKi1z96hDN4Cmy1eA">
-              <button id="register" className={styles.button}>
-                Register here
-              </button>
-            </Link>
-          </div>
+          <h2>Good Morning Blues</h2>
+          {subtitle && <p dangerouslySetInnerHTML={{ __html: subtitle }}></p>}
+
+          <Link href="https://forms.gle/rKi1z96hDN4Cmy1eA">
+            <button id="register" className={styles.button}>
+              Register here
+            </button>
+          </Link>
           {description && (
             <p dangerouslySetInnerHTML={{ __html: description }}></p>
           )}
