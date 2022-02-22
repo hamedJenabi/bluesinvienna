@@ -56,8 +56,8 @@ And 2 parties with live music <br>
           {subtitle && <p dangerouslySetInnerHTML={{ __html: subtitle }}></p>}
 
           <Link href="https://forms.gle/rKi1z96hDN4Cmy1eA">
-            <button id="register" className={styles.button}>
-              Register here
+            <button disabled id="register" className={styles.button}>
+              WE ARE FULLY BOOKED
             </button>
           </Link>
           {description && (
