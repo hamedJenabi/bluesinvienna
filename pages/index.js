@@ -14,7 +14,7 @@ const events = [
     image: "/vsb.png",
     title: "Vienna Sugar Blues",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Vienna Sugar Blues brings 2 days of Blues classes, 5 parties, more than 4 live bands, and lots of #BluesLove. Teacher line-up: </br>Bibi,</br>Dara,</br>Ioanna,</br>Alex",
     link: "https://viennasugarblues.com",
   },
   {
@@ -22,7 +22,7 @@ const events = [
       "https://www.bluesfever.eu/wp-content/uploads/2020/12/Bluesfever_facebook_website_2021.png",
     title: "Blues Fever Festival",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "our vision for blues fever is to have a weekend full of social dancing, high-level classes, panel talks about blues, master classes and competitions. for this to happen, we will have 8 amazing teachers, 5 parties, 5 live bands and lots of #blueslove </br></br>",
     link: "https://bluesfever.eu",
   },
 ];
@@ -75,15 +75,14 @@ export default function Home() {
         menuItems={[
           { title: "Home", link: "/" },
           { title: "Classes", link: "#Classes" },
-          { title: "Good Morning Blues", link: "/goodmorningblues" },
           { title: "Festivals", link: "#Festivals" },
         ]}
       />
       <main className={styles.main}>
-        <h2 className={styles.alarm}>
+        {/* <h2 className={styles.alarm}>
           WEBSITE IS UNDER CONSTRUCTION... Meanwhile checkout our<br></br>
           <a href="/goodmorningblues">Workshop with Jenna & Dara</a>
-        </h2>
+        </h2> */}
         <Teaser
           isZebra
           image="/bluesinvienna.jpeg"

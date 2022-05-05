@@ -53,7 +53,7 @@ And 2 parties with live music <br>
         <img className={styles.image} src="/goodmorningblues.gif" />
         <div className={styles.contentWrapper}>
           <h2>Good Morning Blues</h2>
-          {subtitle && <p dangerouslySetInnerHTML={{ __html: subtitle }}></p>}
+          {/* {subtitle && <p dangerouslySetInnerHTML={{ __html: subtitle }}></p>}
 
           <Link href="https://forms.gle/rKi1z96hDN4Cmy1eA">
             <button disabled id="register" className={styles.button}>
@@ -62,7 +62,8 @@ And 2 parties with live music <br>
           </Link>
           {description && (
             <p dangerouslySetInnerHTML={{ __html: description }}></p>
-          )}
+          )} */}
+          <p>We are cooking up a new blues dance class with a new teachers.</p>
         </div>
       </div>
     </div>
