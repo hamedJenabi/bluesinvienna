@@ -6,30 +6,27 @@ import useMedia from "use-media";
 import Link from "next/link";
 
 export default function Workshop({
-  title = "Blues Classes in Vienna (vaccinated/Recovered only) ",
+  title = "Good Morning Blues with Lotte & Hamed ",
   description = `
-  *** Please bring your <strong>vaccination/Recovered pass</strong>. *** <br>
   <br>
   <br>
-  <strong>Schedule: </strong><br>
+  <strong>Venues: </strong><br>
   PARTY: 
   Friday & Saturday at 20:00 <br>
   at Azul Bar <br>
   <br>
   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5317.280836557739!2d16.37942232645875!3d48.213541651189246!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9a1382f975927df9!2sAzul%20Bar!5e0!3m2!1sen!2sat!4v1631662404285!5m2!1sen!2sat" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>"<br> 
   <br>
-  Class: <br>
-  Saturday  13:00 - 16:00 <br>
-  Level Intermediate and higher: <br>
-  Where: Some Like it Hot Ballroom  <br>
+  Classes: <br>
+  Some Like it Hot Ballroom  <br>
   <br>
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2659.9097390712677!2d16.333537415334074!3d48.189090555551196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476da818c357abbf%3A0xa307951cf682c3b8!2sSome%20Like%20It%20Hot*21!5e0!3m2!1sen!2sat!4v1643820911703!5m2!1sen!2sat" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>"<br> 
   <br>
   <br>
-  Sunday Brunch 11:00 - 15:00 <br>
-  Where: Cafe Amacord <br>
+  Sunday Picknick 16:00 - 20:00 <br>
+  Where: Romawiese <br>
   <br>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2659.422912953409!2d16.361875415334424!3d48.19846945489741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d07846194ca79%3A0xaef663e6759ee18f!2sCaf%C3%A9%20Amacord!5e0!3m2!1sen!2shu!4v1644069806738!5m2!1sen!2shu" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d726.8485567702957!2d16.40336870199208!3d48.24765749097767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d068ad1af2987%3A0x34398ae43bd564ea!2sRomawiese!5e0!3m2!1sen!2snl!4v1656366809526!5m2!1sen!2snl"width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   <br>
   <br>
 
@@ -37,12 +34,17 @@ export default function Workshop({
 }) {
   const isMobile = useMedia({ maxWidth: "468px" });
   const subtitle = `
-  <strong>With Jenna & Dara</strong><br>
-<strong>04.03 - 06.03.2022</strong> <br>
-3 hours of blues/slow swing dance classes <br>
+  <strong>With Lotte & Hamed</strong><br>
+<strong>05.08 - 07.08.2022</strong> <br><br>
+ 3 hours of blues dance classes <br>
 And 2 parties with live music <br>
  <br>
- Price: €70 <br>`;
+ <strong>Level: </strong> <br>
+ Beginner/Intermediate:  <br>
+ Intermediate:  <br><br>
+ <strong>Price: </strong> <br>
+ one Level: €65  <br>
+both Levels: €120  <br>`;
   return (
     <div>
       <Header
@@ -50,20 +52,26 @@ And 2 parties with live music <br>
         menuItems={[{ title: "Home", link: "/" }]}
       />
       <div className={styles.container}>
-        <img className={styles.image} src="/goodmorningblues.gif" />
+        <img className={styles.image} src="/lotte-hamed.jpeg" />
         <div className={styles.contentWrapper}>
           <h2>Good Morning Blues</h2>
-          {/* {subtitle && <p dangerouslySetInnerHTML={{ __html: subtitle }}></p>}
+          {subtitle && <p dangerouslySetInnerHTML={{ __html: subtitle }}></p>}
 
-          <Link href="https://forms.gle/rKi1z96hDN4Cmy1eA">
-            <button disabled id="register" className={styles.button}>
-              WE ARE FULLY BOOKED
+          <Link target="_blank" href="https://forms.gle/ew2v5oNKJBEsauty5">
+            <button id="register" className={styles.button}>
+              Register Here
             </button>
           </Link>
+          <div>
+            <p style={{ margin: "10px 0", fontSize: "18px" }}>Classes:</p>
+            {/* <img className={styles.schedule} src="/schedule-gm.png" /> */}
+            <p style={{ margin: "5px 0" }}>Satruday:</p>
+            <p style={{ margin: "5px 0" }}>Level One: 11:00 - 14:15 </p>
+            <p style={{ margin: "5px 0" }}>Level Two: 15:30 - 18:45 </p>
+          </div>
           {description && (
             <p dangerouslySetInnerHTML={{ __html: description }}></p>
-          )} */}
-          <p>We are cooking up a new blues dance class with a new teachers.</p>
+          )}
         </div>
       </div>
     </div>

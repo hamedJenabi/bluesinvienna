@@ -18,6 +18,14 @@
     width: 60%;
   }
 }
+.schedule{
+  // margin: $sm 0;
+  width: 100%;
+  @media (min-width: 800px) {
+    width: 50%;
+  }
+
+}
 .contentWrapper {
   width: 100%;
   @media (min-width: 800px) {
