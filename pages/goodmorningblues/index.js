@@ -4,6 +4,7 @@ import styles from "./goodmorningblues.module.scss";
 import Header from "../../components/Header/Header";
 import useMedia from "use-media";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function Workshop({
   title = "Good Morning Blues with Lotte & Hamed ",
@@ -12,16 +13,20 @@ export default function Workshop({
   <br>
   <strong>Venues: </strong><br>
   PARTY: 
-  Friday & Saturday at 20:00 <br>
+  Friday at 20:30 <br>
   at Azul Bar <br>
   <br>
   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5317.280836557739!2d16.37942232645875!3d48.213541651189246!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9a1382f975927df9!2sAzul%20Bar!5e0!3m2!1sen!2sat!4v1631662404285!5m2!1sen!2sat" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>"<br> 
   <br>
+  <br>
+  SATURDAY house party 20:00 - 00:00 <br>
+  Where: info will be sent per email :)  <br>
+  <br>
+
   Classes: <br>
   Some Like it Hot Ballroom  <br>
   <br>
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2659.9097390712677!2d16.333537415334074!3d48.189090555551196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476da818c357abbf%3A0xa307951cf682c3b8!2sSome%20Like%20It%20Hot*21!5e0!3m2!1sen!2sat!4v1643820911703!5m2!1sen!2sat" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>"<br> 
-  <br>
   <br>
   Sunday Picknick 16:00 - 20:00 <br>
   Where: Romawiese <br>
@@ -47,6 +52,9 @@ And 2 parties with live music <br>
 both Levels: €120  <br>`;
   return (
     <div>
+      <Head>
+        <meta property="og:image" content="/lotte-hamed.jpeg" />
+      </Head>
       <Header
         title="Blues in Vienna"
         menuItems={[{ title: "Home", link: "/" }]}

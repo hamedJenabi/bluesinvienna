@@ -53,7 +53,7 @@ export default function Home() {
           name="description"
           content="All you need to know about dancing blues in Vienna"
         />
-
+        <meta property="og:image" content="/bluesinvienna.jpeg" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://bluesinvienna.com/" />
         <meta property="og:title" content="Blues in Vienna" />

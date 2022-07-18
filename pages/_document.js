@@ -31,7 +31,6 @@ class MyDocument extends Document {
             property="og:description"
             content="All you need to know about dancing blues in Vienna"
           />
-          <meta property="og:image" content="/bluesinvienna.jpeg" />
           <link
             rel="stylesheet"
             id="et-builder-googlefonts-cached-css"
