@@ -19,7 +19,7 @@ export default function Workshop({
   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5317.280836557739!2d16.37942232645875!3d48.213541651189246!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9a1382f975927df9!2sAzul%20Bar!5e0!3m2!1sen!2sat!4v1631662404285!5m2!1sen!2sat" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>"<br> 
   <br>
   <br>
-  SATURDAY house party 20:00 - 00:00 <br>
+  SATURDAY house party 19:00 - 00:00 <br>
   Where: info will be sent per email :)  <br>
   <br>
 
@@ -45,11 +45,8 @@ export default function Workshop({
 And 2 parties with live music <br>
  <br>
  <strong>Level: </strong> <br>
- Beginner/Intermediate:  <br>
  Intermediate:  <br><br>
- <strong>Price: </strong> <br>
- one Level: €65  <br>
-both Levels: €120  <br>`;
+ <strong>Price: €65</strong> <br>`;
   return (
     <div>
       <Head>
@@ -73,9 +70,7 @@ both Levels: €120  <br>`;
           <div>
             <p style={{ margin: "10px 0", fontSize: "18px" }}>Classes:</p>
             {/* <img className={styles.schedule} src="/schedule-gm.png" /> */}
-            <p style={{ margin: "5px 0" }}>Satruday:</p>
-            <p style={{ margin: "5px 0" }}>Level One: 11:00 - 14:15 </p>
-            <p style={{ margin: "5px 0" }}>Level Two: 15:30 - 18:45 </p>
+            <p style={{ margin: "5px 0" }}>Satruday: 13:00 - 17:00</p>
           </div>
           {description && (
             <p dangerouslySetInnerHTML={{ __html: description }}></p>
