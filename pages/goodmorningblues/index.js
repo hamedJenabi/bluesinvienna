@@ -64,7 +64,7 @@ And 2 parties with live music <br>
 
           <Link target="_blank" href="https://forms.gle/ew2v5oNKJBEsauty5">
             <button id="register" className={styles.button}>
-              Register Here
+              Register here
             </button>
           </Link>
           <div>
