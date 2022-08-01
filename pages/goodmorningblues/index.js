@@ -41,7 +41,7 @@ export default function Workshop({
   const subtitle = `
   <strong>With Lotte & Hamed</strong><br>
 <strong>05.08 - 07.08.2022</strong> <br><br>
- 3 hours of blues dance classes <br>
+ 4 hours of blues dance classes <br>
 And 2 parties with live music <br>
  <br>
  <strong>Level: </strong> <br>
