@@ -24,9 +24,7 @@ export default function Workshop({
   <br>
 
   Classes: <br>
-  Some Like it Hot Ballroom  <br>
-  <br>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2659.9097390712677!2d16.333537415334074!3d48.189090555551196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476da818c357abbf%3A0xa307951cf682c3b8!2sSome%20Like%20It%20Hot*21!5e0!3m2!1sen!2sat!4v1643820911703!5m2!1sen!2sat" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>"<br> 
+  TBA  <br>
   <br>
   Sunday Picknick 16:00 - 20:00 <br>
   Where: Romawiese <br>
