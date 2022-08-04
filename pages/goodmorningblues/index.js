@@ -30,6 +30,7 @@ export default function Workshop({
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10634.132381289408!2d16.3693177!3d48.2156086!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa1be1637d8360f5d!2sSwingAUT%20Studio%20%231!5e0!3m2!1sen!2sat!4v1659627434204!5m2!1sen!2sat" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   <br>
   <br>
+  
   <br>
   Sunday Picknick 16:00 - 20:00 <br>
   Where: Romawiese <br>
