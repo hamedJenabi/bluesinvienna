@@ -1,12 +1,12 @@
 @import "../../styles/variables";
 
 .card {
+  display: flex;
+  flex-direction: column;
   box-shadow: 0 22px 45px 0 rgba(0, 0, 0, 0.11);
   padding: $md;
   border-radius: 4px;
-  width: 250px;
   @media (min-width: $breakpointMd) {
-    width: 300px;
   }
   min-height: 300px;
 }

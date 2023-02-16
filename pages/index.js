@@ -74,8 +74,7 @@ export default function Home() {
         title="BLUES IN VIENNA"
         menuItems={[
           { title: "Home", link: "/" },
-          { title: "Classes", link: "#Classes" },
-          { title: "Good Morning Blues", link: "/goodmorningblues" },
+          { title: "Classes", link: "/classes" },
           { title: "Festivals", link: "#Festivals" },
         ]}
       />

@@ -15,13 +15,24 @@
   margin: $lg 0;
   width: 100%;
   @media (min-width: 800px) {
-    width: 60%;
+    width: 80%;
   }
 }
+.detail {
+  width: 100%;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+}
 .contentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: $lg;
   width: 100%;
   @media (min-width: 800px) {
-    width: 60%;
+    flex-direction: row;
+    width: 80%;
   }
 }
 .button {
