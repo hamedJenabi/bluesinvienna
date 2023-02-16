@@ -75,10 +75,7 @@ And 2 parties with live music <br>
             <p style={{ margin: "10px 0", fontSize: "18px" }}>Classes:</p>
             {/* <img className={styles.schedule} src="/schedule-gm.png" /> */}
             <p style={{ margin: "5px 0" }}>Satruday: 13:00 - 17:00</p>
-          </div>
-          {description && (
-            <p dangerouslySetInnerHTML={{ __html: description }}></p>
-          )}
+
         </div>
       </div>
     </div>
