@@ -96,7 +96,7 @@ export default function Home() {
           isRevered
           title="Classes"
           image="/bluesinvienna.jpeg"
-          content="Next Blues classes starts on September 27th. "
+          content="Next Blues classes starts on March 15th. "
           // link="https://docs.google.com/forms/d/e/1FAIpQLScFtadEB9BUq3GnwHlymZSIQxCZjZvTglKDETaHHqdM-y5DlA/viewform"
           link="/classes"
           button="More info"
