@@ -8,6 +8,7 @@ import Teaser from "../components/Teaser/Teaser";
 import EventCard from "../components/EventCard/EventCard";
 import Heading from "../components/Heading/Heading";
 import useMedia from "use-media";
+import { GraphQLClient } from "graphql-request";
 
 const events = [
   {
@@ -26,9 +27,9 @@ const events = [
     link: "https://bluesfever.eu",
   },
 ];
-export default function Home() {
+export default function Home({ socials }) {
   const isMobile = useMedia({ maxWidth: "768px" });
-
+  console.log("socials", socials);
   const center = {
     lat: 48.214804075824105,
     lng: 16.36558591961406,
@@ -104,10 +105,10 @@ export default function Home() {
         <Teaser
           isZebra
           title="Parties"
-          image="/party.jpeg"
-          content="Our Blues Party is every Tuesday at Azul Bar"
-          link="https://www.facebook.com/bluesshoeson"
-          button="Our Facebook Page"
+          image={socials[0].image.url}
+          content={socials[0].detail.html}
+          link={socials[0].link}
+          button="To Facebook Page"
         />
         <h1
           id="blues"
@@ -158,10 +159,33 @@ export default function Home() {
   );
 }
 
-// export async function getStaticProps({ preview = false }) {
-//   const allPosts = await getAllPostsWithSlug(preview);
-//   console.log("allPosts", allPosts);
-//   return {
-//     props: { allPosts, preview },
-//   };
-// }
+export async function getStaticProps() {
+  const graphcms = new GraphQLClient(
+    "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cle7e622f0ttl01t604hc45ii/master"
+  );
+
+  const { socials } = await graphcms.request(
+    `
+    {
+      socials {
+        id
+        title
+        detail
+        {
+          html
+        }
+        link
+        image {
+          url
+        }
+      }
+    }
+	  `
+  );
+
+  return {
+    props: {
+      socials,
+    },
+  };
+}
