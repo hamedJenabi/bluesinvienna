@@ -27,7 +27,6 @@ export default function Header({ title, menuItems }) {
   }, []);
   const headerColorChange = () => {
     window.pageYOffset > 0 ? setShadow(true) : setShadow(false);
-    console.log("window.pageYOffset", window.pageYOffset);
     if (window.pageYOffset > 320) {
       setTitleShown(true);
     }

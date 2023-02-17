@@ -29,7 +29,6 @@ import { GraphQLClient } from "graphql-request";
 // ];
 export default function Home({ socials, events }) {
   const isMobile = useMedia({ maxWidth: "768px" });
-  console.log("events", events);
   const center = {
     lat: 48.214804075824105,
     lng: 16.36558591961406,
