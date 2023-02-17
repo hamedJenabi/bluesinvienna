@@ -10,26 +10,26 @@ import Heading from "../components/Heading/Heading";
 import useMedia from "use-media";
 import { GraphQLClient } from "graphql-request";
 
-const events = [
-  {
-    image: "/vsb.png",
-    title: "Vienna Sugar Blues",
-    content:
-      "Vienna Sugar Blues brings 2 days of Blues classes, 5 parties, more than 4 live bands, and lots of #BluesLove. Teacher line-up: </br>Bibi,</br>Dara,</br>Ioanna,</br>Alex",
-    link: "https://viennasugarblues.com",
-  },
-  {
-    image:
-      "https://www.bluesfever.eu/wp-content/uploads/2020/12/Bluesfever_facebook_website_2021.png",
-    title: "Blues Fever Festival",
-    content:
-      "our vision for blues fever is to have a weekend full of social dancing, high-level classes, panel talks about blues, master classes and competitions. for this to happen, we will have 8 amazing teachers, 5 parties, 5 live bands and lots of #blueslove </br></br>",
-    link: "https://bluesfever.eu",
-  },
-];
-export default function Home({ socials }) {
+// const events = [
+//   {
+//     image: "/vsb.png",
+//     title: "Vienna Sugar Blues",
+//     content:
+//       "Vienna Sugar Blues brings 2 days of Blues classes, 5 parties, more than 4 live bands, and lots of #BluesLove. Teacher line-up: </br>Bibi,</br>Dara,</br>Ioanna,</br>Alex",
+//     link: "https://viennasugarblues.com",
+//   },
+//   {
+//     image:
+//       "https://www.bluesfever.eu/wp-content/uploads/2020/12/Bluesfever_facebook_website_2021.png",
+//     title: "Blues Fever Festival",
+//     content:
+//       "our vision for blues fever is to have a weekend full of social dancing, high-level classes, panel talks about blues, master classes and competitions. for this to happen, we will have 8 amazing teachers, 5 parties, 5 live bands and lots of #blueslove </br></br>",
+//     link: "https://bluesfever.eu",
+//   },
+// ];
+export default function Home({ socials, events }) {
   const isMobile = useMedia({ maxWidth: "768px" });
-  console.log("socials", socials);
+  console.log("events", events);
   const center = {
     lat: 48.214804075824105,
     lng: 16.36558591961406,
@@ -94,7 +94,6 @@ export default function Home({ socials }) {
           title="Classes"
           image="/bluesinvienna.jpeg"
           content="Next Blues classes starts on March 15th. "
-          // link="https://docs.google.com/forms/d/e/1FAIpQLScFtadEB9BUq3GnwHlymZSIQxCZjZvTglKDETaHHqdM-y5DlA/viewform"
           link="/classes"
           button="More info"
         />
@@ -106,34 +105,38 @@ export default function Home({ socials }) {
           link={socials[0].link}
           button="To Facebook Page"
         />
-        <h1
-          id="blues"
-          style={{
-            padding: "26px 0",
-            width: "100%",
-            textAlign: "center",
-          }}
-        >
-          What is Blues?
-        </h1>
-        <iframe
-          width={isMobile ? "100%" : "760"}
-          height={isMobile ? "300" : "400"}
-          src="https://www.youtube.com/embed/W4GtVlnHZeE"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+        <div className={styles.blues}>
+          <h1
+            id="blues"
+            style={{
+              padding: "26px 0",
+              width: "100%",
+              textAlign: "center",
+            }}
+          >
+            What is Blues?
+          </h1>
+          <iframe
+            width={isMobile ? "100%" : "760"}
+            height={isMobile ? "300" : "400"}
+            src="https://www.youtube.com/embed/W4GtVlnHZeE"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
         <h1 id="Festivals" style={{ paddingTop: "26px" }}>
           Festivals in Vienna
         </h1>
-        <div className={styles.eventWrapper}>
-          {events &&
-            events.map((event) => (
-              <EventCard key={event.title} event={event} />
-            ))}
-        </div>
+        <Container>
+          <div className={styles.eventWrapper}>
+            {events &&
+              events.map((event) => (
+                <EventCard key={event.title} event={event} />
+              ))}
+          </div>
+        </Container>
         {/* <h1 id="About us" style={{ paddingTop: "26px" }}>
           About Blues in Vienna
         </h1>
@@ -178,10 +181,29 @@ export async function getStaticProps() {
     }
 	  `
   );
+  const { festivals } = await graphcms.request(
+    `
+    {
+      festivals {
+        id
+        title
+        detail
+        {
+          html
+        }
+        link
+        image {
+          url
+        }
+      }
+    }
+	  `
+  );
 
   return {
     props: {
       socials,
+      events: festivals,
     },
   };
 }

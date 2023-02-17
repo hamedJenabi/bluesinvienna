@@ -18,6 +18,7 @@
   }
 }
 .content {
+  font-family: $Paragraph;
   @media (min-width: $breakpointMd) {
     width: 90%;
   }

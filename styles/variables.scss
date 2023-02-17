@@ -19,10 +19,9 @@ $breakpointSm: 370px;
 $breakpointMd: 760px;
 $breakpointLg: 1280px;
 $boxShadow: 0 22px 45px 0 rgba(103, 82, 82, 0.11);
-$Paragraph: Fjalla One, Roboto, -apple-system, BlinkMacSystemFont, Segoe UI,
-  Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-$headerFont: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu,
-  Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+$Paragraph: "Open Sans", Roboto, -apple-system, BlinkMacSystemFont, Segoe UI,
+  Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+  sans-serif;
 
 @mixin input {
   border: none;

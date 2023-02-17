@@ -119,16 +119,27 @@
   }
 }
 .eventWrapper {
-  max-width: 100%;
-  display: flex;
+  width: 100%;
   justify-content: center;
-  align-items: center;
-  margin: 32px 0;
-  padding: 0 0 32px 0;
+  // margin: 32px 0;
+  // // padding: 0 0 32px 0;
+  // gap: $sm;
+  // @media (min-width: 800px) {
+  // }
+  display: flex;
   flex-direction: column;
+  gap: $lg;
   @media (min-width: 800px) {
     flex-direction: row;
   }
+}
+.blues {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #02101f;
+  padding-bottom: 40px;
+  width: 100%;
 }
 .about {
   border-top: 1px solid #02101f;
