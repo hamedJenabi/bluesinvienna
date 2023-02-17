@@ -29,7 +29,7 @@ const Teaser = ({
       <div id={anchor} className={styles.title}>
         {title && <h1 dangerouslySetInnerHTML={{ __html: title }} />}
         {content && (
-          <p
+          <div
             className={styles.content}
             dangerouslySetInnerHTML={{ __html: content }}
           />
