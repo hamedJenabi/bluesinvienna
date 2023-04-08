@@ -28,7 +28,7 @@
 .contentWrapper {
   display: flex;
   flex-direction: column;
-  gap: $lg;
+  gap: $sm;
   width: 100%;
   @media (min-width: 800px) {
     flex-direction: row;
