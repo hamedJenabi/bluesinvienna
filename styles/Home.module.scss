@@ -33,7 +33,7 @@
 }
 
 .title a {
-  color: #0070f3;
+  color: $navy;
   text-decoration: none;
 }
 
@@ -92,7 +92,7 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
+  color: $navy;
   border-color: #0070f3;
 }
 

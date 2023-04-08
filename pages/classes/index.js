@@ -25,20 +25,22 @@ export default function Classes({
         <div className={styles.contentWrapper}>
           {classes.map((classItem) => {
             return (
-              <Card className={styles.card}>
-                <h2>{classItem.title}</h2>
-                <div
-                  className={styles.detail}
-                  dangerouslySetInnerHTML={{ __html: classItem.detail.html }}
-                ></div>
-                <div style={{ marginTop: "auto" }}>
-                  <a target="_blank" href={classItem.link}>
-                    <button id="register" className={styles.button}>
-                      Register here
-                    </button>
-                  </a>
-                </div>
-              </Card>
+              <div className={styles.card}>
+                <Card>
+                  <h2>{classItem.title}</h2>
+                  <div
+                    className={styles.detail}
+                    dangerouslySetInnerHTML={{ __html: classItem.detail.html }}
+                  ></div>
+                  <div style={{ marginTop: "auto" }}>
+                    <a target="_blank" href={classItem.link}>
+                      <button id="register" className={styles.button}>
+                        Register here
+                      </button>
+                    </a>
+                  </div>
+                </Card>
+              </div>
             );
           })}
         </div>

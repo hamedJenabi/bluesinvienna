@@ -24,6 +24,9 @@
 .card {
   display: flex;
   flex-direction: column;
+  @media (min-width: 800px) {
+    width: 33%;
+  }
 }
 .contentWrapper {
   display: flex;
