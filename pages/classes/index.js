@@ -17,7 +17,7 @@ export default function Classes({
       <Header
         menuItems={[
           { title: "Home", link: "/" },
-          { title: "Register", link: "#register" },
+          { title: "Register", link: "https://forms.gle/cmEeV6aacw7GJXTr5" },
         ]}
       />
       <div className={styles.container}>
